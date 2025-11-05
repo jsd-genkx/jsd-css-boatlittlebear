@@ -1,105 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="reset.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pokémon Cards</title>
   <link rel="stylesheet" href="style.css" />
-  <title>CSS</title>
 </head>
-
 <body>
-  <div class="header">
-    <h1 class="center">Equal Height Cards with CSS Flexbox</h1>
-    <h5 class="center">ฉันพยายามมากๆแล้ว ฮรือๆๆๆๆๆๆๆ</h5>
-  </div>
 
-  <div class="container">
+  <header class="header">
+    <h1>Pokémon Cards</h1>
+    <h2>ไปเลยซาโตชิฉันเลือกนาย</h2>
+  </header>
 
-    <div class="card-item">
-      <div class="card-body">
-        <img class="card-img" src="https://picsum.photos/250/200?image=480" alt="random" />
-        <h2 class="card-title">Title</h2>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
-        <button class="btn change-btn">เปลี่ยนรูป</button>
-      </div>
-    </div>
+  <main class="container">
 
     <div class="card-item">
       <div class="card-body">
-        <img class="card-img" src="https://picsum.photos/250/200?image=481" alt="random" />
-        <h2 class="card-title">Title</h2>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
-        <button class="btn change-btn">เปลี่ยนรูป</button>
+        <div class="card-media">
+          <img class="card-img" src="https://img.pokemondb.net/artwork/large/pikachu.jpg" alt="Pikachu">
+        </div>
+        <h2 class="card-title">Pikachu ⚡</h2>
+        <p class="card-text">HP: 60 | ATK: 55 | DEF: 40</p>
+        <div class="card-footer">
+          <span class="tag">Electric</span>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <button class="mode-btn">Toggle Theme</button>
       </div>
     </div>
 
     <div class="card-item">
       <div class="card-body">
-        <img class="card-img" src="https://picsum.photos/250/200?image=482" alt="random" />
-        <h2 class="card-title">Title</h2>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
-        <button class="btn change-btn">เปลี่ยนรูป</button>
+        <div class="card-media">
+          <img class="card-img" src="https://img.pokemondb.net/artwork/large/charizard.jpg" alt="Charizard">
+        </div>
+        <h2 class="card-title">Charizard 🔥</h2>
+        <p class="card-text">HP: 78 | ATK: 84 | DEF: 78</p>
+        <div class="card-footer">
+          <span class="tag">Fire / Flying</span>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <button class="mode-btn">Toggle Theme</button>
       </div>
     </div>
 
-	<div class="card-item">
+    <div class="card-item">
       <div class="card-body">
-        <img class="card-img" src="https://picsum.photos/250/200?image=482" alt="random" />
-        <h2 class="card-title">Title</h2>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
-        <button class="btn change-btn">เปลี่ยนรูป</button>
+        <div class="card-media">
+          <img class="card-img" src="https://img.pokemondb.net/artwork/large/bulbasaur.jpg" alt="Bulbasaur">
+        </div>
+        <h2 class="card-title">Bulbasaur 🌿</h2>
+        <p class="card-text">HP: 45 | ATK: 49 | DEF: 49</p>
+        <div class="card-footer">
+          <span class="tag">Grass / Poison</span>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <button class="mode-btn">Toggle Theme</button>
       </div>
     </div>
 
-	<div class="card-item">
+    <div class="card-item">
       <div class="card-body">
-        <img class="card-img" src="https://picsum.photos/250/200?image=482" alt="random" />
-        <h2 class="card-title">Title</h2>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
-        <button class="btn change-btn">เปลี่ยนรูป</button>
+        <div class="card-media">
+          <img class="card-img" src="https://img.pokemondb.net/artwork/large/squirtle.jpg" alt="Squirtle">
+        </div>
+        <h2 class="card-title">Squirtle 💧</h2>
+        <p class="card-text">HP: 44 | ATK: 48 | DEF: 65</p>
+        <div class="card-footer">
+          <span class="tag">Water</span>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <button class="mode-btn">Toggle Theme</button>
       </div>
     </div>
 
-	<div class="card-item">
+    <div class="card-item">
       <div class="card-body">
-        <img class="card-img" src="https://picsum.photos/250/200?image=482" alt="random" />
-        <h2 class="card-title">Title</h2>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
-        <button class="btn change-btn">เปลี่ยนรูป</button>
+        <div class="card-media">
+          <img class="card-img" src="https://img.pokemondb.net/artwork/large/eevee.jpg" alt="Eevee">
+        </div>
+        <h2 class="card-title">Eevee 🧡</h2>
+        <p class="card-text">HP: 55 | ATK: 55 | DEF: 50</p>
+        <div class="card-footer">
+          <span class="tag">Normal</span>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <button class="mode-btn">Toggle Theme</button>
       </div>
     </div>
 
+    <div class="card-item">
+      <div class="card-body">
+        <div class="card-media">
+          <img class="card-img" src="https://img.pokemondb.net/artwork/large/gengar.jpg" alt="Gengar">
+        </div>
+        <h2 class="card-title">Gengar 👻</h2>
+        <p class="card-text">HP: 60 | ATK: 65 | DEF: 60</p>
+        <div class="card-footer">
+          <span class="tag">Ghost / Poison</span>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <button class="mode-btn">Toggle Theme</button>
+      </div>
+    </div>
 
+  </main>
 
-
-  </div>
-
-  <script>
-
-    const images = [
-      "https://picsum.photos/250/200?image=480",
-      "https://picsum.photos/250/200?image=481",
-      "https://picsum.photos/250/200?image=482",
-      "https://picsum.photos/250/200?image=483",
-      "https://picsum.photos/250/200?image=484",
-      "https://picsum.photos/250/200?image=485"
-    ];
-
-    const buttons = document.querySelectorAll(".change-btn");
-
-    buttons.forEach((btn) => {
-      let index = 0;
-
-      btn.addEventListener("click", () => {
-        const img = btn.closest(".card-body").querySelector(".card-img");
-        index = (index + 1) % images.length;
-        img.src = images[index];
-      });
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
