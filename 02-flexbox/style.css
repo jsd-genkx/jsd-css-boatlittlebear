@@ -25,33 +25,34 @@ body {
 	background-color: var(--color-accent);
 	width: 100%;
 	min-height: 100dvh;
-
 	display: flex;
-	/* gap: 1rem; */
-	/* justify-content: center; */
-	/* align-items: center; */
-	/* align-content: center; */
-	/* flex-wrap: wrap; */
+	gap: 1rem;
+	flex-direction: row; /*กำหนดแกนเป็น column,roll*/
+	justify-content: center; /*เปลี่ยค่าแกน main*/
+	align-items: center;/*อีกแกน*/
+	align-content: center;
+	flex-wrap: wrap;
 
-	/* flex-direction: column; */
 	/* height: 90vh; */
 }
 
 .box {
 	width: 200px;
+	/* height: 200px; */
 	aspect-ratio: 1;
 	font-size: 2rem;
 	background-color: var(--color-primary);
 	color: var(--color-white);
 	border: solid var(--color-white) 5px;
 
-	/* flex-shrink: 1;
-	flex-grow: 0;
-	flex-basis: 300px; */
+	flex-shrink: 1; /*ให้ยืดหดได้ไม่ให้เหลือพื้นท่ด้านข้างโดยนำพื้นที่ด้าขข้างมาแบ้งให้ตัวเองคนละ 1 เท่า*/
+	flex-grow: 0 ; /*ลูกสามารถยืดขยายได้ตามจำนวนพื้นที่ที่เหลืออยู้*/
+	flex-basis: 300px;
+	text-align: center;
 
 	/* flex:1; */
 }
 
 /* .box3 {
-	flex:555;
+	flex:555 เอาพื้นที่ให้สามมากว่าอันอื่นๆ   ;
 } */

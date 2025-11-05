@@ -1,21 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<link
-			rel="stylesheet"
-			href="reset.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="style.css"
-		/>
-		<title>CSS</title>
-	</head>
 
-	<body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>CSS</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="center">Equal Height Cards with CSS Flexbox</h1>
+    <h5 class="center">ฉันพยายามมากๆแล้ว ฮรือๆๆๆๆๆๆๆ</h5>
+  </div>
+
+  <div class="container">
+
+    <div class="card-item">
+      <div class="card-body">
+        <img class="card-img" src="https://picsum.photos/250/200?image=480" alt="random" />
+        <h2 class="card-title">Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
+        <button class="btn change-btn">เปลี่ยนรูป</button>
+      </div>
+    </div>
+
+    <div class="card-item">
+      <div class="card-body">
+        <img class="card-img" src="https://picsum.photos/250/200?image=481" alt="random" />
+        <h2 class="card-title">Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
+        <button class="btn change-btn">เปลี่ยนรูป</button>
+      </div>
+    </div>
+
+    <div class="card-item">
+      <div class="card-body">
+        <img class="card-img" src="https://picsum.photos/250/200?image=482" alt="random" />
+        <h2 class="card-title">Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
+        <button class="btn change-btn">เปลี่ยนรูป</button>
+      </div>
+    </div>
+
+	<div class="card-item">
+      <div class="card-body">
+        <img class="card-img" src="https://picsum.photos/250/200?image=482" alt="random" />
+        <h2 class="card-title">Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
+        <button class="btn change-btn">เปลี่ยนรูป</button>
+      </div>
+    </div>
+
+	<div class="card-item">
+      <div class="card-body">
+        <img class="card-img" src="https://picsum.photos/250/200?image=482" alt="random" />
+        <h2 class="card-title">Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
+        <button class="btn change-btn">เปลี่ยนรูป</button>
+      </div>
+    </div>
+
+	<div class="card-item">
+      <div class="card-body">
+        <img class="card-img" src="https://picsum.photos/250/200?image=482" alt="random" />
+        <h2 class="card-title">Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima autem reiciendis veniam cupiditate.</p>
+        <button class="btn change-btn">เปลี่ยนรูป</button>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <script>
+
+    const images = [
+      "https://picsum.photos/250/200?image=480",
+      "https://picsum.photos/250/200?image=481",
+      "https://picsum.photos/250/200?image=482",
+      "https://picsum.photos/250/200?image=483",
+      "https://picsum.photos/250/200?image=484",
+      "https://picsum.photos/250/200?image=485"
+    ];
+
+    const buttons = document.querySelectorAll(".change-btn");
+
+    buttons.forEach((btn) => {
+      let index = 0;
+
+      btn.addEventListener("click", () => {
+        const img = btn.closest(".card-body").querySelector(".card-img");
+        index = (index + 1) % images.length;
+        img.src = images[index];
+      });
+    });
+  </script>
+
+</body>
+
 </html>
