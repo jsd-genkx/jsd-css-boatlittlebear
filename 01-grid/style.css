@@ -23,13 +23,13 @@ body {
 .container {
 	width: 100%;
 	min-height: 100dvh;
-	/* display: grid; */
-	/* grid-template-rows: auto 1fr auto; */
-	/* grid-template-columns: 30ch 1fr; */
-	/* grid-template-areas:
+	display: grid;
+	grid-template-rows: auto 1fr auto; /*100px-->nav 500px-->main 120px-->footer*,repeat(3,auto)ทำซ้ำกลางบนล่างสามครั้ง,1fr หมายถึงเหลือเท่าใหล่ก็เอาเท่านั้น หัก footer กับ  navbar ออก  */
+	grid-template-columns: 30ch 1fr;
+	grid-template-areas:
 		"header header"
-		"main main"
-		"footer footer"; */
+		"aside main"
+		"footer footer";
 }
 
 section {
@@ -45,27 +45,27 @@ header {
 	background-color: var(--color-primary);
 	color: var(--color-white);
 
-	/* grid-area: header; */
+	grid-area: header;
 }
 
 main {
 	color: var(--color-black);
 	background-color: var(--color-accent);
 
-	/* grid-area: main; */
+	grid-area: main;
 }
 
 aside {
 	color: var(--color-white);
 	background-color: var(--color-black);
-  display: none;
+    /* display: none; */
 
-	/* grid-area: aside; */
+	grid-area: aside;
 }
 
 footer {
 	background-color: var(--color-secondary);
 	color: var(--color-white);
 
-	/* grid-area: footer; */
+	grid-area: footer;
 }
